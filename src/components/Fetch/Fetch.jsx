@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
 import { useFetch } from '../../hooks/useFetch'
 
-export const Fetch = () => {
-    const [endpoint, setEndpoint] = useState('https://uselessfacts.jsph.pl/api/v2/facts/random');
+export const Fetch = ({endpoint}) => {
     const { data } = useFetch(endpoint);
     // console.log(data);
 

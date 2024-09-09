@@ -7,8 +7,7 @@ function App() {
 
   return (
     <>
-      {/* <p>I'm so happy, as happy as can be!</p> */}
-      <Fetch />
+      <Fetch endpoint="https://uselessfacts.jsph.pl/api/v2/facts/random" />
       <Gallery />
     </>
   )
